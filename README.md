@@ -144,7 +144,6 @@ The project uses a real-world food-delivery dataset containing **45,593 delivery
 ---
 
 
----
 
 ##  Data Cleaning & Preprocessing
 
@@ -231,7 +230,6 @@ This transformation helps convert raw operational data into model-ready features
 ---
 
 
----
 
 ##  Model Development
 
@@ -281,7 +279,6 @@ The tuned models were then compared against their baseline versions to identify 
 ---
 
 
----
 
 ##  Baseline Model Performance
 
@@ -381,7 +378,6 @@ The optimized models were evaluated using **R² Score, MAE, MSE, and RMSE** and 
 
 ---
 
----
 
 ##  Tuned Model Comparison
 
