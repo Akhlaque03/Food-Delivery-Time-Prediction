@@ -1,17 +1,26 @@
 # 🍔 Food Delivery Time Prediction
 
-### End-to-End Machine Learning Regression Project
+### End-to-End Machine Learning Regression • MLflow • Streamlit • Docker
 
-Predicting food delivery time in minutes using delivery-partner information, location, weather, traffic, vehicle condition, order details, festival status, and time-related features.
+> **Predict food delivery time in minutes using delivery-partner, location, traffic, weather, vehicle, order, and time-related information.**
 
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange?style=for-the-badge)
-![LightGBM](https://img.shields.io/badge/LightGBM-4.6.0-9ACD32?style=for-the-badge)
-![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-0194E2?style=for-the-badge\&logo=mlflow\&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployment-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-Tuned-9ACD32?style=for-the-badge)
+![MLflow](https://img.shields.io/badge/MLflow-Tracking-0194E2?style=for-the-badge\&logo=mlflow\&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live_App-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+
+</p>
+
+<p align="center">
+
+**🏆 Final Model:** LightGBM Regressor (Tuned)
+**📈 R² Score:** 0.7935
+**⏱️ MAE:** 3.3995 minutes
+**📉 RMSE:** 4.2554 minutes
 
 </p>
 
@@ -19,181 +28,167 @@ Predicting food delivery time in minutes using delivery-partner information, loc
 
 ## 🚀 Live Demo
 
-### 🍔 [Open Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)
+### 🍔 [Open the Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)
 
-Enter delivery-related information and get an estimated delivery time directly from the trained Machine Learning model.
-
----
-
-## 📌 Project Overview
-
-**Food Delivery Time Prediction** is an end-to-end Machine Learning regression project built around a real-world delivery-time prediction problem.
-
-The objective is to estimate how many minutes a food order will take to reach the customer using information such as:
-
-* Delivery-partner characteristics
-* Restaurant and customer locations
-* Weather conditions
-* Road traffic density
-* Vehicle condition
-* Order details
-* Festival status
-* City
-* Order and pickup timing
-
-The project covers the complete journey from **raw data to a live deployed Machine Learning application**.
-
-### 🔄 Complete Project Lifecycle
-
-**Data → Cleaning → EDA → Feature Engineering → Preprocessing → Model Training → MLflow Tracking → Hyperparameter Tuning → Model Selection → Model Registry → Model Persistence → Streamlit → Docker → Cloud Deployment**
+Enter delivery, location, traffic, weather, vehicle, order, and timing information to receive an estimated food delivery time.
 
 ---
 
-## 🎯 Business Problem
+## 📌 Project Snapshot
 
-Food delivery time is affected by several dynamic factors, including traffic, weather, delivery-partner experience, vehicle condition, location, order characteristics, and time of day.
+|                           | Details                                  |
+| ------------------------- | ---------------------------------------- |
+| 🎯 Problem                | Food Delivery Time Prediction            |
+| 🤖 Problem Type           | Supervised Machine Learning — Regression |
+| 📊 Dataset                | 45,593 delivery records                  |
+| 🏆 Final Model            | Tuned LightGBM Regressor                 |
+| 📈 R² Score               | **0.7935**                               |
+| 🎯 MAE                    | **3.3995 minutes**                       |
+| 📉 RMSE                   | **4.2554 minutes**                       |
+| 🧪 Experiment Tracking    | MLflow                                   |
+| 🎛️ Hyperparameter Tuning | RandomizedSearchCV                       |
+| 🌐 Web Application        | Streamlit                                |
+| 🐳 Containerization       | Docker                                   |
+| ☁️ Deployment             | Streamlit Community Cloud                |
 
-Accurate delivery-time estimation can help food-delivery platforms improve:
+---
+
+## 💡 Why This Project?
+
+Food delivery time depends on multiple real-world factors such as:
+
+* 🚴 Delivery-partner characteristics
+* 📍 Restaurant and customer locations
+* 🌦️ Weather conditions
+* 🚦 Road traffic density
+* 🛵 Vehicle condition
+* 🍱 Type of order
+* 🎉 Festival conditions
+* 🏙️ City
+* ⏰ Order and pickup timing
+* 📦 Multiple deliveries
+
+The objective of this project is to build a Machine Learning regression system capable of estimating delivery time in **minutes** from these factors.
+
+---
+
+# 🎯 Business Problem
+
+For a food-delivery platform, accurate delivery-time estimation can improve:
 
 * Customer experience
-* Estimated delivery-time accuracy
+* ETA accuracy
 * Delivery-partner allocation
 * Operational planning
-* Restaurant and logistics management
+* Logistics management
+* Restaurant coordination
 
-This project builds a regression model that predicts the expected delivery time in **minutes**.
+The model predicts:
 
----
-
-## ⭐ Why This Project Stands Out
-
-* End-to-end Machine Learning implementation
-* Real-world regression problem
-* Multiple regression algorithms compared
-* Advanced boosting models tuned
-* MLflow used for experiment tracking
-* Model Registry included in the workflow
-* Saved model and preprocessing artifacts
-* Interactive Streamlit application
-* Docker containerization
-* Cloud deployment with live demo
-* Reproducible local setup
+```text
+Estimated Food Delivery Time → Minutes
+```
 
 ---
 
-## 🔄 Machine Learning Workflow
+# 🔄 End-to-End Machine Learning Workflow
 
-The project follows a structured production-oriented workflow:
-
-| Stage                    | Implementation                                          |
-| ------------------------ | ------------------------------------------------------- |
-| 📊 Dataset               | Historical food-delivery data                           |
-| 🧹 Data Cleaning         | Missing values, invalid entries, data types             |
-| 🔎 EDA                   | Target distribution, categorical analysis, correlations |
-| ⚙️ Feature Engineering   | Date and time-based features                            |
-| 🔄 Preprocessing         | Frequency encoding, one-hot encoding, scaling           |
-| 🤖 Model Training        | Multiple regression algorithms                          |
-| 📊 MLflow Tracking       | Parameters, metrics, model runs                         |
-| 🎯 Hyperparameter Tuning | XGBoost, LightGBM, CatBoost                             |
-| 🏆 Model Selection       | Tuned-model comparison                                  |
-| 🗂️ Model Registry       | Selected model registration                             |
-| 💾 Model Persistence     | `.pkl` model and preprocessing artifacts                |
-| 🌐 Streamlit             | Interactive prediction application                      |
-| 🐳 Docker                | Containerized deployment                                |
-| ☁️ Cloud Deployment      | Live Streamlit Community Cloud application              |
+```text
+Raw Dataset
+     ↓
+Data Cleaning
+     ↓
+Exploratory Data Analysis
+     ↓
+Feature Engineering
+     ↓
+Encoding & Scaling
+     ↓
+Train / Test Split
+     ↓
+Baseline Model Training
+     ↓
+Model Comparison
+     ↓
+Hyperparameter Tuning
+     ↓
+MLflow Experiment Tracking
+     ↓
+Final Model Selection
+     ↓
+Model Persistence
+     ↓
+Streamlit Application
+     ↓
+Docker Containerization
+     ↓
+Cloud Deployment
+```
 
 ---
 
-## 📊 Dataset
+# 📊 Dataset
 
-The dataset contains **45,593 historical food-delivery records** with numerical and categorical features.
+The project uses **45,593 historical food-delivery records** containing numerical and categorical information related to delivery operations.
 
-### 🎯 Target Variable
+## 🎯 Target Variable
 
 ```text
 Time_taken(min)
 ```
 
-**Target:** Food delivery time in minutes.
+The target represents the total delivery time in minutes.
 
-### 🔑 Important Features
+## 🔑 Main Features
 
-| Feature                       | Description                  |
-| ----------------------------- | ---------------------------- |
-| `Delivery_person_ID`          | Delivery partner identifier  |
-| `Delivery_person_Age`         | Age of delivery partner      |
-| `Delivery_person_Ratings`     | Delivery partner rating      |
-| `Restaurant_latitude`         | Restaurant latitude          |
-| `Restaurant_longitude`        | Restaurant longitude         |
-| `Delivery_location_latitude`  | Customer latitude            |
-| `Delivery_location_longitude` | Customer longitude           |
-| `Order_Date`                  | Order date                   |
-| `Time_Orderd`                 | Order placement time         |
-| `Time_Order_picked`           | Order pickup time            |
-| `Weatherconditions`           | Weather condition            |
-| `Road_traffic_density`        | Traffic condition            |
-| `Vehicle_condition`           | Vehicle condition            |
-| `Type_of_order`               | Food order type              |
-| `Type_of_vehicle`             | Delivery vehicle             |
-| `multiple_deliveries`         | Number of deliveries handled |
-| `Festival`                    | Festival indicator           |
-| `City`                        | Delivery city                |
+| Feature                       | Description                 |
+| ----------------------------- | --------------------------- |
+| `Delivery_person_ID`          | Delivery-partner identifier |
+| `Delivery_person_Age`         | Delivery-partner age        |
+| `Delivery_person_Ratings`     | Delivery-partner rating     |
+| `Restaurant_latitude`         | Restaurant latitude         |
+| `Restaurant_longitude`        | Restaurant longitude        |
+| `Delivery_location_latitude`  | Customer latitude           |
+| `Delivery_location_longitude` | Customer longitude          |
+| `Order_Date`                  | Order date                  |
+| `Time_Orderd`                 | Order placement time        |
+| `Time_Order_picked`           | Pickup time                 |
+| `Weatherconditions`           | Weather condition           |
+| `Road_traffic_density`        | Traffic condition           |
+| `Vehicle_condition`           | Vehicle condition           |
+| `Type_of_order`               | Type of food order          |
+| `Type_of_vehicle`             | Delivery vehicle            |
+| `multiple_deliveries`         | Number of deliveries        |
+| `Festival`                    | Festival indicator          |
+| `City`                        | Delivery city               |
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+# 🧹 Data Cleaning & Preprocessing
 
-The raw dataset contained missing values, inconsistent strings, mixed data types, and extreme values.
+The raw dataset contained inconsistent values, missing values, mixed data types, and extreme observations.
 
 ### Data Cleaning
 
 * Removed the unnecessary `ID` column.
 * Replaced invalid values such as `NaN ` with actual missing values.
-* Converted numerical columns to appropriate numeric types.
+* Converted numerical columns into appropriate numeric types.
 * Converted `Order_Date` into datetime format.
 * Converted order and pickup times into datetime features.
-* Removed original date/time columns after feature extraction.
+* Removed the original date/time columns after extracting useful information.
 
 ### Missing Value Treatment
 
-* Numerical features → **Median imputation**
-* Categorical features → **Mode imputation**
+| Data Type            | Treatment         |
+| -------------------- | ----------------- |
+| Numerical features   | Median imputation |
+| Categorical features | Mode imputation   |
 
 ### Outlier Treatment
 
-Extreme numerical values were handled using **IQR-based clipping** to reduce the impact of unusually large or small observations while retaining the original records.
+IQR-based clipping was applied to selected numerical features to reduce the effect of extreme observations while retaining the original records.
 
-### Preprocessing
-
-* Frequency encoding for `Delivery_person_ID`
-* One-hot encoding for categorical variables
-* Numerical feature scaling
-* Train-test split before model training
-
----
-
-## ⚙️ Feature Engineering
-
-Feature engineering was used to extract meaningful information from raw date and time fields.
-
-### 📅 Date Features
-
-```text
-Order_Day
-Order_Month
-Order_Day_of_Week
-```
-
-### ⏰ Time Features
-
-```text
-Order_Hour
-Order_Minute
-Pickup_Hour
-Pickup_Minute
-```
-
-### 🔤 Encoding Strategy
+### Encoding
 
 **Frequency Encoding**
 
@@ -212,169 +207,248 @@ Festival
 City
 ```
 
-### 📏 Feature Scaling
+### Feature Scaling
 
-Numerical features were scaled after encoding so that algorithms sensitive to feature magnitude could operate effectively.
-
----
-
-## 🤖 Machine Learning Models
-
-Multiple regression algorithms were trained and compared.
-
-### Baseline Models
-
-* Linear Regression
-* KNN Regressor
-* SVM Regressor
-* Decision Tree Regressor
-* Random Forest Regressor
-* Gradient Boosting Regressor
-* XGBoost Regressor
-* LightGBM Regressor
-* CatBoost Regressor
-
-### 🎯 Hyperparameter Tuning
-
-The strongest boosting candidates were further optimized:
-
-* XGBoost
-* LightGBM
-* CatBoost
-
-The tuned models were compared using the same evaluation metrics before selecting the final deployment model.
+Numerical features were scaled after categorical encoding to ensure that scale-sensitive algorithms could operate effectively.
 
 ---
 
-## 📈 Model Evaluation
+# ⚙️ Feature Engineering
 
-The models were evaluated using:
+Date and time information was transformed into model-ready numerical features.
 
-| Metric       | Purpose                           |
-| ------------ | --------------------------------- |
-| **R² Score** | Measures explained variance       |
-| **MAE**      | Average absolute error in minutes |
-| **MSE**      | Average squared prediction error  |
-| **RMSE**     | Prediction error in minutes       |
+### 📅 Date Features
 
-### Baseline Model Comparison
+```text
+Order_Day
+Order_Month
+Order_Day_of_Week
+```
 
-| Model             |   R² Score |        MAE |       RMSE |
-| ----------------- | ---------: | ---------: | ---------: |
-| Linear Regression |   -49.4815 |    65.3959 |    66.5291 |
-| KNN Regressor     |    -0.0839 |     7.8676 |     9.7487 |
-| SVM Regressor     |    -0.0923 |     8.1408 |     9.7864 |
-| Decision Tree     |     0.5063 |     4.9011 |     6.5791 |
-| Random Forest     |     0.7354 |     3.7452 |     4.8164 |
-| Gradient Boosting |     0.6975 |     4.0741 |     5.1499 |
-| XGBoost           |     0.7774 |     3.5153 |     4.4178 |
-| LightGBM          |     0.7696 |     3.5760 |     4.4941 |
-| **CatBoost**      | **0.7823** | **3.4801** | **4.3693** |
+### ⏰ Time Features
 
-> **Note:** These are baseline results before hyperparameter tuning. The final deployment model was selected after tuned-model comparison.
+```text
+Order_Hour
+Order_Minute
+Pickup_Hour
+Pickup_Minute
+```
+
+These engineered features allow the models to capture patterns related to different days, hours, and delivery periods.
+
+---
+
+# 🤖 Baseline Model Comparison
+
+Multiple regression algorithms were trained before hyperparameter optimization.
+
+| Model             |       MAE |        MSE |      RMSE |  R² Score |
+| ----------------- | --------: | ---------: | --------: | --------: |
+| 🥇 **CatBoost**   | **3.480** | **19.091** | **4.369** | **0.782** |
+| XGBoost           |     3.515 |     19.517 |     4.418 |     0.777 |
+| LightGBM          |     3.576 |     20.197 |     4.494 |     0.770 |
+| Random Forest     |     3.745 |     23.198 |     4.816 |     0.735 |
+| Gradient Boosting |     4.074 |     26.522 |     5.150 |     0.698 |
+| Linear Regression |     4.993 |     40.017 |     6.326 |     0.544 |
+| Decision Tree     |     4.901 |     43.285 |     6.579 |     0.506 |
+| KNN Regressor     |     5.576 |     50.265 |     7.090 |     0.427 |
+| SVM Regressor     |     5.571 |     50.404 |     7.100 |     0.425 |
+
+### 📌 Baseline Finding
+
+**CatBoost** achieved the strongest baseline performance with:
+
+```text
+R²   = 0.782
+MAE  = 3.480 minutes
+RMSE = 4.369 minutes
+```
+
+However, the top boosting models were further optimized to determine whether performance could be improved.
 
 ### 📊 Baseline Model Comparison
 
 ![Baseline Model Comparison](screenshorts/baseline_model_comparison.png)
 
-### 📈 Baseline Model Graph
+### 📈 Baseline Model Performance
 
 ![Baseline Model Graph](screenshorts/baseline_model_graph.png)
 
 ---
 
-## 🏆 Hyperparameter Tuning & Final Model
+# 🎛️ Hyperparameter Tuning
 
-After baseline comparison, hyperparameter tuning was performed on:
+The strongest boosting candidates were selected for further optimization:
 
 * XGBoost
 * LightGBM
 * CatBoost
 
-The tuned models were evaluated using:
-
-**R² Score · MAE · MSE · RMSE**
-
-### 🥇 Final Deployment Model
-
-**LightGBM Tuned** was selected as the final deployment model based on the tuned-model comparison.
-
-### Why LightGBM?
-
-LightGBM was selected because it provided strong predictive performance while maintaining efficient training and inference.
-
-The final trained model is stored as:
+Hyperparameter tuning was performed using:
 
 ```text
-Food_Deliver_lightgbm.pkl
+RandomizedSearchCV
 ```
+
+### Tuning Configuration
+
+```text
+Search Strategy : RandomizedSearchCV
+Iterations      : 40
+Cross Validation: 5-Fold
+Scoring         : R²
+Random State    : 42
+Parallel Jobs   : -1
+```
+
+For LightGBM, the tuning process explored parameters such as:
+
+```text
+n_estimators
+learning_rate
+max_depth
+num_leaves
+min_child_samples
+subsample
+colsample_bytree
+reg_alpha
+reg_lambda
+```
+
+---
+
+# 🏆 Final Model Selection
+
+After hyperparameter tuning, the optimized models were compared using the same evaluation metrics.
+
+| Model                 |        MAE |         MSE |       RMSE |   R² Score |
+| --------------------- | ---------: | ----------: | ---------: | ---------: |
+| 🥇 **LightGBM Tuned** | **3.3995** | **18.1084** | **4.2554** | **0.7935** |
+| XGBoost Tuned         |     3.4394 |     18.6834 |     4.3224 |     0.7869 |
+| CatBoost Tuned        |     3.4520 |     18.9816 |     4.3568 |     0.7835 |
+
+### 🥇 Selected Deployment Model
+
+# LightGBM Regressor — Tuned
+
+The tuned LightGBM model achieved the best overall performance and was selected for deployment.
+
+### Final Performance
+
+| Metric       |             Result |
+| ------------ | -----------------: |
+| **R² Score** |         **0.7935** |
+| **MAE**      | **3.3995 minutes** |
+| **MSE**      |        **18.1084** |
+| **RMSE**     | **4.2554 minutes** |
+
+### 📈 What This Means
+
+The model explains approximately **79.35% of the variance** in delivery time on the evaluation data.
+
+The average absolute prediction error is approximately **3.4 minutes**, while the RMSE is approximately **4.26 minutes**.
 
 ### 📊 Tuned Model Comparison
 
 ![Tuned Model Comparison](screenshorts/tuned_model_comparison.png)
 
-### 📈 Tuned Model Graph
+### 📈 Tuned Model Performance
 
 ![Tuned Model Graph](screenshorts/tuned_model_graph.png)
 
+### 🏆 Final LightGBM Metrics
+
+![LightGBM Tuned Metrics](screenshorts/lightgbm_tuned_metrics.png)
+
 ---
 
-## 📊 MLflow Experiment Tracking
+# 🔍 Feature Importance
 
-[MLflow](https://mlflow.org/) was used to track Machine Learning experiments throughout the project.
+The final LightGBM model was analyzed to identify the features contributing most strongly to predictions.
 
-### Tracked Information
+### Top Important Features
 
-* Model runs
+| Rank | Feature                       | Importance |
+| ---: | ----------------------------- | ---------: |
+|    1 | `Order_Day`                   |       4617 |
+|    2 | `Delivery_location_latitude`  |       3844 |
+|    3 | `Delivery_person_ID`          |       3652 |
+|    4 | `Delivery_location_longitude` |       3387 |
+|    5 | `Restaurant_longitude`        |       3381 |
+|    6 | `Delivery_person_Age`         |       3375 |
+|    7 | `Restaurant_latitude`         |       3258 |
+|    8 | `Order_Hour`                  |       2954 |
+|    9 | `Delivery_person_Ratings`     |       2515 |
+|   10 | `Pickup_Hour`                 |       2362 |
+
+### 📊 Feature Importance Visualization
+
+The application also provides a visual representation of the top features used by the final model.
+
+---
+
+# 🧪 MLflow Experiment Tracking
+
+**MLflow** was integrated into the project to track Machine Learning experiments and improve reproducibility.
+
+### MLflow Used For
+
+* Experiment tracking
 * Model parameters
 * Evaluation metrics
-* Baseline model results
+* Baseline model runs
 * Tuned model experiments
-* Final model performance
+* Model comparison
+* Model selection workflow
 
-### Experiment Name
+### Experiment
 
 ```text
 Food_Delivery_Prediction
 ```
 
-### MLflow Experiment Tracking
+### 📊 MLflow Experiment Tracking
 
 ![MLflow Experiment Tracking](screenshorts/mlflow_experiment_tracking.png)
 
-> `mlflow.db` is used as the local MLflow database backend and is kept out of version control.
+> MLflow was used during local development to organize and track experiments. The local MLflow database is intentionally excluded from version control.
 
 ---
 
-## 🧠 Model & Preprocessing Artifacts
+# 💾 Model Persistence
 
-The trained model and preprocessing information are stored separately so the same transformations used during training can be reproduced during inference.
+The final trained model and preprocessing artifacts are stored separately for inference.
 
-| File                        | Purpose                                               |
-| --------------------------- | ----------------------------------------------------- |
-| `Food_Deliver_lightgbm.pkl` | Final trained LightGBM regression model               |
-| `feature_columns.pkl`       | Feature-column structure required during inference    |
-| `freq_mappings.pkl`         | Frequency-encoding mappings used during preprocessing |
+| Artifact                           | Purpose                           |
+| ---------------------------------- | --------------------------------- |
+| `Food_Delivery_LightGBM_Tuned.pkl` | Final tuned LightGBM model        |
+| `feature_columns.pkl`              | Required feature-column structure |
+| `freq_mappings.pkl`                | Frequency-encoding mappings       |
 
-These artifacts are loaded by the Streamlit application to prepare user inputs and generate predictions.
+The Streamlit application loads these artifacts to reproduce the required preprocessing and generate predictions.
 
 ---
 
-## 🌐 Streamlit Application
+# 🌐 Streamlit Application
 
-The final LightGBM model was integrated into an interactive **Streamlit** application.
+The trained model was integrated into an interactive Streamlit application.
 
 ### Application Features
 
-* Interactive prediction form
-* Delivery-partner information
-* Restaurant and customer location details
-* Weather and traffic conditions
-* Vehicle and order information
-* Festival and city information
-* Real-time delivery-time prediction
+* 🎛️ Interactive input controls
+* 🚴 Delivery-partner information
+* 📍 Restaurant and delivery location
+* 🌦️ Weather conditions
+* 🚦 Traffic density
+* 🛵 Vehicle information
+* 🍱 Order information
+* 🎉 Festival information
+* ⏰ Order and pickup timing
+* 🤖 Real-time model prediction
+* 📊 Model performance information
+* 🔍 Feature importance visualization
 
-### 🏠 Streamlit Home Page
+### 🏠 Application Home Page
 
 ![Streamlit Home Page](screenshorts/home_page.png)
 
@@ -384,19 +458,13 @@ The final LightGBM model was integrated into an interactive **Streamlit** applic
 
 ### 🚀 Live Application
 
-**[🍔 Open Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)**
+**[🍔 Launch Food Delivery Time Prediction](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)**
 
 ---
 
-## 🐳 Docker Deployment
+# 🐳 Docker Containerization
 
-## 🐳 Docker Deployment
-
-The Streamlit application was containerized using Docker to provide a consistent and reproducible deployment environment.
-
-### Docker Configuration
-
-The project includes a `Dockerfile` configured to run the Streamlit application.
+The Streamlit application was containerized using Docker to provide a consistent and reproducible runtime environment.
 
 ### Build Docker Image
 
@@ -410,59 +478,58 @@ docker build -t food-delivery-app .
 docker run -p 8501:8501 food-delivery-app
 ```
 
-### Docker Container Screenshot
+### 🐳 Docker Container Running
 
 ![Docker Container](screenshorts/docker_container_running.png)
 
 ---
 
+# 🖥️ Run Locally
 
----
-
-## 🖥️ Local Setup & Installation
-
-### 1. Clone Repository
+## 1. Clone Repository
 
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd Food-Delivery-Time-Prediction
 ```
 
-### 2. Create Virtual Environment
+## 2. Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### 3. Activate Environment — Windows
+## 3. Activate Environment — Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-### 4. Install Dependencies
+## 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run Streamlit
+## 5. Run Streamlit
 
 ```bash
 streamlit run app.py
 ```
 
+The application will open locally in your browser.
+
 ---
 
-## 📊 Run MLflow Locally
+# 🧪 Run MLflow Locally
 
-The project uses SQLite as the local MLflow backend.
+If you want to inspect the locally tracked MLflow experiments:
 
 ```bash
-mlflow ui --backend-store-uri sqlite:///mlflow.db
+mlflow ui
 ```
 
-MLflow UI will normally be available at:
+Then open:
 
 ```text
 http://127.0.0.1:5000
@@ -470,22 +537,25 @@ http://127.0.0.1:5000
 
 ---
 
-## 🛠️ Technologies & Tools
+# 🛠️ Tech Stack
 
-### Programming Language
+### Programming
 
 * Python 3.13
 
-### Data Science & Machine Learning
+### Data Processing
 
 * Pandas
 * NumPy
+
+### Machine Learning
+
 * Scikit-learn
 * XGBoost
 * LightGBM
 * CatBoost
 
-### Data Visualization
+### Visualization
 
 * Matplotlib
 * Seaborn
@@ -503,14 +573,14 @@ http://127.0.0.1:5000
 * Docker
 * Streamlit Community Cloud
 
-### Development Environment
+### Development
 
 * Jupyter Notebook
 * VS Code
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 Food-Delivery-Time-Prediction/
@@ -521,84 +591,110 @@ Food-Delivery-Time-Prediction/
 ├── runtime.txt
 ├── Dockerfile
 │
-├── Food_Deliver_lightgbm.pkl
+├── Food_Delivery_LightGBM_Tuned.pkl
 ├── feature_columns.pkl
 ├── freq_mappings.pkl
 │
-├── mlflow.db
 ├── README.md
 │
 └── screenshorts/
     ├── baseline_model_comparison.png
     ├── baseline_model_graph.png
-    ├── tuned_model_comparison.png
-    ├── tuned_model_graph.png
+    ├── docker_container_running.png
     ├── home_page.png
-    ├── prediction_result.png
-    ├── mlflow_experiment_tracking.png
     ├── lightgbm_tuned_metrics.png
-    └── docker_container_running.png
+    ├── mlflow_experiment_tracking.png
+    ├── prediction_result.png
+    ├── tuned_model_comparison.png
+    └── tuned_model_graph.png
 ```
 
 ---
 
-## 📌 Final Results
+# 📈 Key Takeaways
 
-### Baseline Performance
+### Baseline → Tuned Model
 
-The strongest baseline performance was achieved by **CatBoost**:
+The project demonstrates a complete model-improvement process:
 
-| Metric       |              Score |
-| ------------ | -----------------: |
-| **R² Score** |         **0.7823** |
-| **MAE**      | **3.4801 minutes** |
-| **RMSE**     | **4.3693 minutes** |
+```text
+Best Baseline
+CatBoost
+R² = 0.782
+        ↓
+Hyperparameter Tuning
+        ↓
+Best Tuned Model
+LightGBM
+R² = 0.7935
+```
 
-The final deployment model was selected after hyperparameter tuning and tuned-model comparison.
+### Performance Improvement
 
-### Deployment Completed
+| Metric | Baseline CatBoost | Tuned LightGBM | Improvement |
+| ------ | ----------------: | -------------: | ----------: |
+| R²     |            0.7823 |     **0.7935** |           ↑ |
+| MAE    |            3.4801 |     **3.3995** |           ↓ |
+| RMSE   |            4.3693 |     **4.2554** |           ↓ |
+| MSE    |           19.0910 |    **18.1084** |           ↓ |
 
-* ✅ Machine Learning regression model trained
-* ✅ Multiple models compared
-* ✅ Hyperparameter tuning completed
-* ✅ MLflow experiment tracking implemented
-* ✅ Model Registry workflow implemented
-* ✅ Model and preprocessing artifacts saved
-* ✅ Streamlit application developed
-* ✅ Docker containerization completed
-* ✅ Application deployed to Streamlit Community Cloud
-* ✅ Live prediction application available
-
-### 🚀 Live Project
-
-**[🍔 View Live Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)**
+The tuned LightGBM model improved upon the strongest baseline and was therefore selected for deployment.
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Deployment Status
 
-Potential improvements include:
-
-* Real-time traffic and weather API integration
-* Geospatial distance and route-based features
-* Advanced ensemble and deep-learning models
-* Automated model retraining pipelines
-* MLflow-based production monitoring
-* SHAP-based model explainability
-* CI/CD automation
-* Cloud deployment on AWS, Azure, or Google Cloud
-* Continuous prediction-performance monitoring
+| Component                 | Status      |
+| ------------------------- | ----------- |
+| Data Cleaning             | ✅ Completed |
+| EDA                       | ✅ Completed |
+| Feature Engineering       | ✅ Completed |
+| Preprocessing             | ✅ Completed |
+| Baseline Model Comparison | ✅ Completed |
+| Hyperparameter Tuning     | ✅ Completed |
+| MLflow Tracking           | ✅ Completed |
+| Final Model Selection     | ✅ Completed |
+| Model Persistence         | ✅ Completed |
+| Streamlit Application     | ✅ Completed |
+| Docker Containerization   | ✅ Completed |
+| Cloud Deployment          | ✅ Completed |
 
 ---
 
-## 👨‍💻 Author
+# 🔮 Future Improvements
 
-### Akhlaque Alam
+Potential next steps include:
+
+* 🌍 Geospatial distance and route-based features
+* 🌦️ Real-time weather API integration
+* 🚦 Real-time traffic API integration
+* 🔎 SHAP-based model explainability
+* 🔄 Automated model retraining
+* 📊 Production model monitoring
+* ⚙️ CI/CD automation
+* ☁️ AWS / Azure / GCP deployment
+* 🧪 Automated testing pipeline
+* 📈 Continuous performance monitoring
+
+---
+
+# 👨‍💻 Author
+
+## Akhlaque Alam
 
 **Aspiring Data Scientist | Machine Learning | Python | SQL | Streamlit | MLflow | Docker**
 
-Passionate about building practical Machine Learning solutions, deploying data-driven applications, and turning real-world datasets into useful predictive systems.
+I enjoy building practical Machine Learning solutions, transforming real-world datasets into predictive systems, and deploying models as usable applications.
+
+### 🔗 Project
+
+**Live Demo:**
+https://akhlaque03-food-delivery-time-prediction.streamlit.app/
 
 ---
 
-### ⭐ If you found this project interesting, feel free to explore the repository and try the live application.
+<p align="center">
+
+### ⭐ If you found this project useful, consider giving the repository a star!
+
+</p>
