@@ -317,24 +317,6 @@ The tuned models were evaluated using **R² Score, MAE, MSE, and RMSE**.
 
 The final trained model is saved as:
 
-```text
-Food_Deliver_lightgbm.pkl
-
-
-## 🧠 Model & Preprocessing Artifacts
-
-The trained model and preprocessing information are stored separately so the same transformations used during training can be reproduced during prediction.
-
-| File | Purpose |
-|---|---|
-| `Food_Deliver_lightgbm.pkl` | Final trained LightGBM regression model |
-| `feature_columns.pkl` | Stores the feature-column structure required during inference |
-| `freq_mappings.pkl` | Stores frequency-encoding mappings used during preprocessing |
-
-These artifacts are loaded by the Streamlit application to prepare user inputs and generate predictions using the trained model.
-
----
-
 
 
 ## 📊 MLflow Experiment Tracking
@@ -356,93 +338,6 @@ The experiment tracking workflow records:
 Food_Delivery_Prediction
 
 
-
-## 🌐 Streamlit Application
-
-The final trained LightGBM model was integrated into an interactive **Streamlit** web application.
-
-Users can enter delivery-related information through the application, and the model generates an estimated **food delivery time in minutes**.
-
-### Application Features
-
-- Interactive input form
-- Delivery-partner information
-- Restaurant and delivery location details
-- Weather and traffic conditions
-- Vehicle and order information
-- Festival and city information
-- Real-time delivery-time prediction
-
-### 🏠 Application Home Page
-
-![Streamlit Home Page](screenshorts/home_page.png)
-
-### 🎯 Prediction Result
-
-![Prediction Result](screenshorts/prediction_result.png)
-
-### 🚀 Live Application
-
-**[Open Live Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)**
-
----
-
-
-
-## 🐳 Docker Deployment
-
-The application is containerized using Docker to provide a consistent and reproducible deployment environment.
-
-### Docker Setup
-
-The project includes a `Dockerfile` configured to run the Streamlit application.
-
-### Build and Run the Application
-
-```bash
-docker build -t food-delivery-app .
-docker run -p 8501:8501 food-delivery-app
-
-
-
-## 🖥️ Local Setup & Installation
-
-Follow these steps to run the project locally.
-
-### 1. Clone the Repository
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd Food-Delivery-Time-Prediction
-```
-
-### 2. Create a Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-Activate the environment on Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Streamlit Application
-
-```bash
-streamlit run app.py
-```
-
-The application will open locally in your browser.
-
----
 
 
 ## 🛠️ Technologies & Tools
