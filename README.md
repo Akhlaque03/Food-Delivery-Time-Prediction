@@ -500,7 +500,7 @@ docker run -p 8501:8501 food-delivery-app
 ### Clone Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/Akhlaque03/Food-Delivery-Time-Prediction.git
 cd Food-Delivery-Time-Prediction
 ```
 
@@ -532,7 +532,7 @@ streamlit run app.py
 
 ## Run MLflow Locally
 
-The project can run MLflow using SQLite as its local backend.
+MLflow is used for experiment tracking and model evaluation.
 
 ```bash
 mlflow ui --backend-store-uri sqlite:///mlflow.db
@@ -630,7 +630,7 @@ Model Selection
 Model Persistence
       ↓
 Streamlit Application
-      ↓
+      ↓|
 Docker
       ↓
 Cloud Deployment
