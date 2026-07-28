@@ -447,7 +447,7 @@ http://localhost:8501
 
 ### Baseline Model
 
-![Baseline Model](screenshorts/baseline_model.png)
+![Baseline Model](screenshorts/baseline_model_comparison.png)
 
 ### Baseline Model Graph
 
@@ -455,7 +455,7 @@ http://localhost:8501
 
 ### Tuned Model
 
-![Tuned Model](screenshorts/tuned_model.png)
+![Tuned Model](screenshorts/tuned_model_comparison.png)
 
 ### Tuned Model Graph
 
@@ -471,7 +471,7 @@ http://localhost:8501
 
 ### MLflow Experiment Tracking
 
-![MLflow Experiments](screenshorts/mlflow_experiments.png)
+![MLflow Experiments](screenshorts/mlflow_experiment_tracking.png)
 
 ### LightGBM Tuned Metrics
 
@@ -479,7 +479,8 @@ http://localhost:8501
 
 ### Docker Container
 
-![Docker Container](screenshorts/docker_container.png)
+![Docker Container](screenshorts/docker_container_running.png)
+
 
 
 ---
