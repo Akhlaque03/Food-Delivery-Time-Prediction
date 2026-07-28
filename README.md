@@ -267,7 +267,7 @@ Before hyperparameter tuning, all nine models were compared using the same train
 
 <p align="center">
 
-<img src="screenshorts/baseline_model_comparison.png" alt="Baseline Model Comparison" width="900">
+<img src="./screenshorts/baseline_model_comparison.png" alt="Baseline Model Comparison" width="900">
 
 </p>
 
@@ -337,7 +337,7 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 
 <p align="center">
 
-<img src="screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
+<img src="./screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
 
 </p>
 
