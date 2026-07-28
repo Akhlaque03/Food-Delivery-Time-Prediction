@@ -263,13 +263,21 @@ Before hyperparameter tuning, all nine models were compared using the same train
 | KNN Regressor     |     5.576 |     50.265 |     7.090 |     0.427 |
 | SVM Regressor     |     5.571 |     50.404 |     7.100 |     0.425 |
 
-### Baseline Comparison
+### Baseline Model Comparison
 
 <p align="center">
 
-<img src="./screenshorts/baseline_model_graph.png" alt="Baseline Model Performance Graph" width="900">
+<img src="./screenshorts/baseline_model_comparison.png" alt="Baseline Model Comparison Table" width="900">
 
 </p>
+
+<p align="center">
+
+<img src="./screenshorts/baseline_model_graph.png" alt="Baseline Model Comparison Graph" width="900">
+
+</p>
+
+The baseline results showed that **CatBoost, XGBoost, and LightGBM** were the strongest candidates for further optimization.
 
 The baseline results showed that **CatBoost, XGBoost, and LightGBM** were the strongest candidates for further optimization.
 
