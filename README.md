@@ -271,15 +271,16 @@ Before hyperparameter tuning, all nine models were compared using the same train
 
 </p>
 
+### Baseline Model Performance Graph
+
 <p align="center">
 
-<img src="./screenshorts/baseline_model_graph.png" alt="Baseline Model Comparison Graph" width="900">
+<img src="./screenshorts/baseline_model_graph.png" alt="Baseline Model Performance Graph" width="900">
 
 </p>
 
-The baseline results showed that **CatBoost, XGBoost, and LightGBM** were the strongest candidates for further optimization.
+Among the nine baseline models, **CatBoost achieved the highest R² Score of 0.782**, followed by **XGBoost (0.777)** and **LightGBM (0.770)**. Based on these results, **CatBoost, XGBoost, and LightGBM were selected for hyperparameter tuning**.
 
-The baseline results showed that **CatBoost, XGBoost, and LightGBM** were the strongest candidates for further optimization.
 
 
 ---
@@ -342,7 +343,15 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 | XGBoost            |     3.5153 |     19.5171 |     4.4178 |     0.7774 |
 | LightGBM           |     3.5760 |     20.1971 |     4.4941 |     0.7696 |
 
-### Tuned Model Performance
+### Tuned Model Comparison
+
+<p align="center">
+
+<img src="./screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison Table" width="900">
+
+</p>
+
+### Tuned Model Performance Graph
 
 <p align="center">
 
@@ -350,7 +359,8 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 
 </p>
 
-The tuned-model comparison shows that **LightGBM Tuned** achieved the strongest performance, with an R² score of **0.7935**, followed by **XGBoost Tuned (0.7869)** and **CatBoost Tuned (0.7835)**.
+After hyperparameter tuning, **LightGBM Tuned achieved the best overall performance with an R² Score of 0.7935, MAE of 3.3995 minutes, and RMSE of 4.2554 minutes**. It outperformed **XGBoost Tuned (R² 0.7869)** and **CatBoost Tuned (R² 0.7835)**, making LightGBM Tuned the final model selected for deployment.
+
 
 
 ---
