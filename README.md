@@ -447,21 +447,41 @@ http://localhost:8501
 
 ### Baseline Model
 
+![Baseline Model](screenshorts/baseline_model_comparison.png)
+
 ### Baseline Model Graph
+
+![Baseline Model Graph](screenshorts/baseline_model_graph.png)
 
 ### Tuned Model
 
+![Tuned Model](screenshorts/tuned_model_comparison.png)
+
 ### Tuned Model Graph
+
+![Tuned Model Graph](screenshorts/tuned_model_graph.png)
 
 ### Streamlit Home Page
 
+![Home Page](screenshorts/home_page.png)
+
 ### Prediction Result
+
+![Prediction Result](screenshorts/prediction_result.png)
 
 ### MLflow Experiment Tracking
 
+![MLflow Experiments](screenshorts/mlflow_experiment_tracking.png)
+
 ### LightGBM Tuned Metrics
 
+![LightGBM Tuned Metrics](screenshorts/lightgbm_tuned_metrics.png)
+
 ### Docker Container
+
+![Docker Container](screenshorts/docker_container_running.png)
+
+
 
 ---
 
