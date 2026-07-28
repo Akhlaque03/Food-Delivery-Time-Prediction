@@ -364,13 +364,15 @@ The final deployment model is **Tuned LightGBM**, selected because it achieved t
 
 The model explains approximately **79.35% of the variance** in delivery time on the evaluation data, with an average absolute prediction error of approximately **3.40 minutes**.
 
-### Model Performance Snapshot
+### Final Model Performance
 
 <p align="center">
 
-<img src="screenshorts/lightgbm_tuned_metrics.png" alt="Tuned LightGBM Metrics" width="800">
+<img src="screenshorts/lightgbm_tuned_metrics.png" alt="Final Tuned LightGBM Model Performance Metrics from MLflow" width="800">
 
 </p>
+
+The final tuned LightGBM model achieved an R² Score of **0.7935**, with an MAE of **3.3995 minutes**, RMSE of **4.2554 minutes**, and MSE of **18.1084**, as recorded in the MLflow experiment.
 
 ---
 
