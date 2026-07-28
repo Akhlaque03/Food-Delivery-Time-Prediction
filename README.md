@@ -39,7 +39,7 @@ The deployed application allows users to enter delivery, location, traffic, weat
 
 <p align="center">
 
-<img src="screenshorts/home_page.png" alt="Food Delivery Prediction Streamlit Application" width="850">
+<img src="screenshots/home_page.png" alt="Food Delivery Prediction Streamlit Application" width="850">
 
 </p>
 
@@ -313,7 +313,7 @@ Based on the baseline results, **CatBoost, XGBoost, and LightGBM** were selected
 
 <p align="center">
 
-<img src="./screenshorts/baseline_model_comparison.png" alt="Baseline Model Comparison" width="900">
+<img src="./screenshots/baseline_model_comparison.png" alt="Baseline Model Comparison" width="900">
 
 </p>
 
@@ -321,7 +321,7 @@ Based on the baseline results, **CatBoost, XGBoost, and LightGBM** were selected
 
 <p align="center">
 
-<img src="./screenshorts/baseline_model_graph.png" alt="Baseline Model Performance Graph" width="900">
+<img src="./screenshots//baseline_model_graph.png" alt="Baseline Model Performance Graph" width="900">
 
 </p>
 
@@ -400,7 +400,7 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 
 <p align="center">
 
-<img src="./screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
+<img src="./screenshots//tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
 
 </p>
 
@@ -408,7 +408,7 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 
 <p align="center">
 
-<img src="./screenshorts/tuned_model_graph.png" alt="Tuned Model Performance Graph" width="900">
+<img src="./screenshots//tuned_model_graph.png" alt="Tuned Model Performance Graph" width="900">
 
 </p>
 
@@ -450,7 +450,7 @@ The final model explains approximately **79.35% of the variance** in delivery ti
 
 <p align="center">
 
-<img src="./screenshorts/lightgbm_tuned_metrics.png" alt="Final Tuned LightGBM Model Performance Metrics" width="800">
+<img src="./screenshots/lightgbm_tuned_metrics.png" alt="Final Tuned LightGBM Model Performance Metrics" width="800">
 
 </p>
 
@@ -520,7 +520,7 @@ Food_Delivery_Prediction
 
 <p align="center">
 
-<img src="./screenshorts/mlflow_experiment_tracking.png" alt="MLflow Experiment Tracking Dashboard" width="900">
+<img src="./screenshots/mlflow_experiment_tracking.png" alt="MLflow Experiment Tracking Dashboard" width="900">
 
 </p>
 
@@ -528,7 +528,7 @@ MLflow improved experiment reproducibility by maintaining a complete history of 
 
 ---
 
-## 🧠 Model Artifacts
+##  Model Artifacts
 
 The trained model and preprocessing components are saved separately to ensure that the same transformations used during training can be reproduced during prediction.
 
@@ -571,19 +571,19 @@ The application allows users to provide delivery-related information and generat
 
 <p align="center">
 
-<img src="./screenshorts/home_page.png" alt="Streamlit Application Home Page" width="850">
+<img src="./screenshots/home_page.png" alt="Streamlit Application Home Page" width="850">
 
 </p>
 
-### 🎯 Prediction Result
+###  Prediction Result
 
 <p align="center">
 
-<img src="./screenshorts/prediction_result.png" alt="Food Delivery Prediction Result" width="850">
+<img src="./screenshots/prediction_result.png" alt="Food Delivery Prediction Result" width="850">
 
 </p>
 
-### 🚀 Live Application
+###  Live Application
 
 <p align="center">
 
@@ -634,7 +634,7 @@ http://localhost:8501
 
 <p align="center">
 
-<img src="./screenshorts/docker_container_running.png" alt="Docker Container Running" width="850">
+<img src="./screenshots/docker_container_running.png" alt="Docker Container Running" width="850">
 
 </p>
 
@@ -802,7 +802,7 @@ This structure keeps the project organized and makes it easier to maintain, repr
 ---
 
 
-## 📌 Key Results
+##  Key Results
 
 This project successfully completed the complete Machine Learning lifecycle, starting from raw data preprocessing to model deployment.
 
@@ -814,7 +814,7 @@ This project successfully completed the complete Machine Learning lifecycle, sta
 * `RandomizedSearchCV` with 5-fold cross-validation was used for optimization.
 * Tuned LightGBM achieved the best final performance.
 
-### 🏆 Final Model Performance
+###  Final Model Performance
 
 | Metric   |              Score |
 | -------- | -----------------: |
@@ -925,7 +925,7 @@ Passionate about building practical Machine Learning solutions that go beyond mo
 
 <p align="center">
 
-### 🚀 [View Live Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)
+###  [View Live Food Delivery Time Prediction App](https://akhlaque03-food-delivery-time-prediction.streamlit.app/)
 
 </p>
 
