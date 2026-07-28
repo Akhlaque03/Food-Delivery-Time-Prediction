@@ -273,7 +273,6 @@ Before hyperparameter tuning, all nine models were compared using the same train
 
 The baseline results showed that **CatBoost, XGBoost, and LightGBM** were the strongest candidates for further optimization.
 
----
 
 ---
 
@@ -342,6 +341,9 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 <img src="./screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
 
 </p>
+
+The tuned-model comparison shows that **LightGBM Tuned** achieved the strongest overall performance, followed by **XGBoost Tuned** and **CatBoost Tuned**.
+
 
 ---
 
