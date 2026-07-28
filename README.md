@@ -211,11 +211,11 @@ Order and pickup times were transformed into:
 
 
 
-### 📏 Feature Scaling
+###  Feature Scaling
 
 Numerical features were scaled after encoding to ensure that features were represented on comparable scales, particularly for algorithms sensitive to feature magnitude.
 
-### 🎯 Feature Engineering Goal
+###  Feature Engineering Goal
 
 The engineered features provide the models with additional information about:
 
@@ -233,7 +233,7 @@ This transformation helps convert raw operational data into model-ready features
 
 ---
 
-## 🤖 Model Development
+##  Model Development
 
 Multiple regression algorithms were trained and evaluated to identify the most effective approach for predicting food delivery time.
 
@@ -283,7 +283,7 @@ The tuned models were then compared against their baseline versions to identify 
 
 ---
 
-## 📈 Baseline Model Performance
+##  Baseline Model Performance
 
 Before hyperparameter tuning, all nine regression models were evaluated using the same train-test split and evaluation metrics.
 
@@ -299,7 +299,7 @@ Before hyperparameter tuning, all nine regression models were evaluated using th
 | SVM Regressor     |     8.1408 |     95.7741 |     9.7864 |    -0.0923 |
 | Linear Regression |    65.3959 |   4426.1270 |    66.5291 |   -49.4815 |
 
-### 🏆 Baseline Result
+###  Baseline Result
 
 **CatBoost achieved the strongest baseline performance** with:
 
@@ -309,7 +309,7 @@ Before hyperparameter tuning, all nine regression models were evaluated using th
 
 Based on the baseline results, **CatBoost, XGBoost, and LightGBM** were selected as the strongest candidates for hyperparameter tuning.
 
-### 📊 Baseline Model Comparison
+###  Baseline Model Comparison
 
 <p align="center">
 
@@ -383,7 +383,7 @@ The optimized models were evaluated using **R² Score, MAE, MSE, and RMSE** and 
 
 ---
 
-## 🏆 Tuned Model Comparison
+##  Tuned Model Comparison
 
 After hyperparameter tuning, the three optimized boosting models were compared with their baseline versions using the same evaluation metrics.
 
@@ -456,18 +456,7 @@ The final model explains approximately **79.35% of the variance** in delivery ti
 
 The final tuned LightGBM model achieved the strongest overall performance among the tuned candidates and was selected for deployment in the Streamlit application.
 
----
 
-
-### Final Model Performance
-
-<p align="center">
-
-<img src="screenshorts/lightgbm_tuned_metrics.png" alt="Final Tuned LightGBM Model Performance Metrics from MLflow" width="800">
-
-</p>
-
-The final tuned LightGBM model achieved an R² Score of **0.7935**, with an MAE of **3.3995 minutes**, RMSE of **4.2554 minutes**, and MSE of **18.1084**, as recorded in the MLflow experiment.
 
 ---
 
