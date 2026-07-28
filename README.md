@@ -390,13 +390,13 @@ The final LightGBM model was integrated into an interactive **Streamlit** applic
 
 ## 🐳 Docker Deployment
 
+## 🐳 Docker Deployment
+
 The Streamlit application was containerized using Docker to provide a consistent and reproducible deployment environment.
 
 ### Docker Configuration
 
-```text
-Dockerfile
-```
+The project includes a `Dockerfile` configured to run the Streamlit application.
 
 ### Build Docker Image
 
@@ -410,9 +410,12 @@ docker build -t food-delivery-app .
 docker run -p 8501:8501 food-delivery-app
 ```
 
-### Docker Container
+### Docker Container Screenshot
 
 ![Docker Container](screenshorts/docker_container_running.png)
+
+---
+
 
 ---
 
