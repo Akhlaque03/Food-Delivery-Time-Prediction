@@ -338,11 +338,11 @@ After hyperparameter tuning, the three optimized boosting models were compared w
 
 <p align="center">
 
-<img src="./screenshorts/tuned_model_comparison.png" alt="Tuned Model Comparison" width="900">
+<img src="./screenshorts/tuned_model_graph.png" alt="Tuned Model Performance Graph" width="900">
 
 </p>
 
-The tuned-model comparison shows that **LightGBM Tuned** achieved the strongest overall performance, followed by **XGBoost Tuned** and **CatBoost Tuned**.
+The tuned-model comparison shows that **LightGBM Tuned** achieved the strongest performance, with an R² score of **0.7935**, followed by **XGBoost Tuned (0.7869)** and **CatBoost Tuned (0.7835)**.
 
 
 ---
